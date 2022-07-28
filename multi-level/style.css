@@ -1,0 +1,70 @@
+.center {
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 52em) {
+  .center {
+    max-width: 52rem;
+  }
+}
+
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background: hsl(0, 0%, 15%);
+}
+
+.menu ul li a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 1rem;
+}
+
+.menu ul li a:hover {
+  background: hsl(0, 0%, 45%);
+}
+
+@media screen and (max-width: 30em) {
+  .multi-nav ul ul.hide {
+    display: none;
+  }
+
+  .multi-nav ul ul li a {
+    padding-left: 2em;
+  }
+
+  .multi-nav ul ul.toggle-on {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 30rem) {
+  .multi-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .multi-nav li {
+    flex: 1 0 auto;
+    position: relative;
+    text-align: center;
+  }
+
+  .multi-nav ul ul {
+    display: none;
+    position: absolute;
+  }
+
+  .multi-nav ul ul.toggle-on {
+    display: flex;
+  }
+
+  .multi-nav .sub-menu li {
+    flex: 1 1 auto;
+  }
+}
